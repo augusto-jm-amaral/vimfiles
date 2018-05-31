@@ -51,6 +51,7 @@ Plug 'benmills/vimux'
 Plug 'hashivim/vim-terraform'
 Plug 'mxw/vim-jsx'
 Plug 'tpope/vim-rhubarb'
+Plug 'terryma/vim-multiple-cursors'
 " }}}
 " ##### Plug post-setup {{{
 call plug#end()
@@ -138,8 +139,11 @@ colorscheme molokai
 autocmd BufEnter * colorscheme molokai
 
 " Leader = ,
-let mapleader = ","
+let mapleader = " "
 " }}}
+
+" Color coloumn in 80
+set colorcolumn=80
 " ##### General mappings  {{{
 " ##### Tabs {{{
 nnoremap <leader>t :tabnew<cr>
